@@ -23,11 +23,12 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_POLITE_HILL_07FADAD00 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Required for GitHub integrations (PR comments, etc.)
           action: "upload"
           ###### Repository/Build Configurations ######
-          app_location: "/"       # your app folder (change if frontend in subfolder)
-          api_location: ""        # optional
-          output_location: "dist" # if React/Vite use 'dist', if plain HTML leave empty
+          app_location: "/"          # Your app folder path
+          api_location: ""           # Leave empty if not using API
+          output_location: "dist"    # Change to your build output (for React/Vite it's usually 'dist')
           ###### End Configurations ######
 
   close_pull_request_job:
