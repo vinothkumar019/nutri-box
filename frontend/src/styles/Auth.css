@@ -1,0 +1,111 @@
+/* src/styles/Auth.css */
+
+:root {
+  --primary-green: #38b000;
+  --light-green: #b7efc5;
+  --accent-orange: #ffa94d;
+  --text-dark: #2f2f2f;
+  --background: #f8fff8;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e9f9ef 0%, #fff 100%);
+}
+
+.auth-card {
+  background: var(--white);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(56, 176, 0, 0.1);
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--primary-green);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-input {
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1.5px solid #d0d0d0;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.auth-input:focus {
+  border-color: var(--primary-green);
+  box-shadow: 0 0 5px rgba(56, 176, 0, 0.2);
+}
+
+.auth-btn {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #2d8600;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.auth-link a {
+  color: var(--primary-green);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.select-diet {
+  border-radius: 12px;
+  border: 1.5px solid #d0d0d0;
+  padding: 0.8rem;
+  outline: none;
+  background-color: #fff;
+  font-size: 0.95rem;
+}
